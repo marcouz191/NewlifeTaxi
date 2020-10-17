@@ -8,7 +8,7 @@
     "id": 47556023,
     "node_id": "MDExOlByb2plY3RDYXJkNDc1NTYwMjM=",
     "note": "node.js",
-    "archived": false,
+    "archived": true,
     "creator": {
       "login": "marcouz191",
       "id": 53315381,
@@ -27,7 +27,7 @@
       "events_url": "https://api.github.com/users/marcouz191/events{/privacy}",
       "received_events_url": "https://api.github.com/users/marcouz191/received_events",
       "type": "User",
-      "site_admin": false
+      "site_admin": true
     },
     "created_at": "2020-10-17T12:38:18Z",
     "updated_at": "2020-10-17T12:38:18Z"
@@ -60,7 +60,7 @@
     },
     "html_url": "https://github.com/marcouz191/NewlifeTaxi",
     "description": null,
-    "fork": false,
+    "fork": true,
     "url": "https://api.github.com/repos/marcouz191/NewlifeTaxi",
     "forks_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/forks",
     "keys_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/keys{/key_id}",
