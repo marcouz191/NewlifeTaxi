@@ -1,45 +1,149 @@
-import discord
-from dbl import DBLClient
-
-dbltoken = "token"
-bottoken = "token"
-
-client = DBLClient(token=dbltoken)
-bot = discord.Client()
-
-@bot.event
-async def on_guild_join(server):
-    await client.post_stats(jsonObject={
-        "server_count": len(bot.guilds)
-        })
-
-@bot.event
-async def on_guild_leave(server):
-    await client.post_stats(jsonObject={
-        "server_count": len(bot.guilds)
-        })
-
-bot.run(bottoken)
-Async:
-import discord
-from dbl import DBLClient
-
-dbltoken = "token"
-bottoken = "token"
-
-client = DBLClient(token=dbltoken)
-bot = discord.Client()
-
-@bot.event
-async def on_server_join(server):
-    await client.post_stats(jsonObject={
-        "server_count": len(bot.servers)
-        })
-
-@bot.event
-async def on_server_leave(server):
-    await client.post_stats(jsonObject={
-        "server_count": len(bot.servers)
-        })
-
-bot.run(bottoken)
+{
+  "action": "created",
+  "project_card": {
+    "url": "https://api.github.com/projects/columns/cards/47556023",
+    "project_url": "https://api.github.com/projects/5696540",
+    "column_url": "https://api.github.com/projects/columns/11284826",
+    "column_id": 11284826,
+    "id": 47556023,
+    "node_id": "MDExOlByb2plY3RDYXJkNDc1NTYwMjM=",
+    "note": "node.js",
+    "archived": false,
+    "creator": {
+      "login": "marcouz191",
+      "id": 53315381,
+      "node_id": "MDQ6VXNlcjUzMzE1Mzgx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/53315381?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/marcouz191",
+      "html_url": "https://github.com/marcouz191",
+      "followers_url": "https://api.github.com/users/marcouz191/followers",
+      "following_url": "https://api.github.com/users/marcouz191/following{/other_user}",
+      "gists_url": "https://api.github.com/users/marcouz191/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/marcouz191/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/marcouz191/subscriptions",
+      "organizations_url": "https://api.github.com/users/marcouz191/orgs",
+      "repos_url": "https://api.github.com/users/marcouz191/repos",
+      "events_url": "https://api.github.com/users/marcouz191/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/marcouz191/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2020-10-17T12:38:18Z",
+    "updated_at": "2020-10-17T12:38:18Z"
+  },
+  "repository": {
+    "id": 304729175,
+    "node_id": "MDEwOlJlcG9zaXRvcnkzMDQ3MjkxNzU=",
+    "name": "NewlifeTaxi",
+    "full_name": "marcouz191/NewlifeTaxi",
+    "private": false,
+    "owner": {
+      "login": "marcouz191",
+      "id": 53315381,
+      "node_id": "MDQ6VXNlcjUzMzE1Mzgx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/53315381?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/marcouz191",
+      "html_url": "https://github.com/marcouz191",
+      "followers_url": "https://api.github.com/users/marcouz191/followers",
+      "following_url": "https://api.github.com/users/marcouz191/following{/other_user}",
+      "gists_url": "https://api.github.com/users/marcouz191/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/marcouz191/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/marcouz191/subscriptions",
+      "organizations_url": "https://api.github.com/users/marcouz191/orgs",
+      "repos_url": "https://api.github.com/users/marcouz191/repos",
+      "events_url": "https://api.github.com/users/marcouz191/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/marcouz191/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/marcouz191/NewlifeTaxi",
+    "description": null,
+    "fork": false,
+    "url": "https://api.github.com/repos/marcouz191/NewlifeTaxi",
+    "forks_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/forks",
+    "keys_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/teams",
+    "hooks_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/hooks",
+    "issue_events_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/events",
+    "assignees_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/tags",
+    "blobs_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/languages",
+    "stargazers_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/stargazers",
+    "contributors_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/contributors",
+    "subscribers_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/subscribers",
+    "subscription_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/subscription",
+    "commits_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/merges",
+    "archive_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/downloads",
+    "issues_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/labels{/name}",
+    "releases_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/marcouz191/NewlifeTaxi/deployments",
+    "created_at": "2020-10-16T20:12:51Z",
+    "updated_at": "2020-10-17T12:22:39Z",
+    "pushed_at": "2020-10-17T12:22:37Z",
+    "git_url": "git://github.com/marcouz191/NewlifeTaxi.git",
+    "ssh_url": "git@github.com:marcouz191/NewlifeTaxi.git",
+    "clone_url": "https://github.com/marcouz191/NewlifeTaxi.git",
+    "svn_url": "https://github.com/marcouz191/NewlifeTaxi",
+    "homepage": null,
+    "size": 15,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": "Lua",
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": true,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 1,
+    "license": null,
+    "forks": 0,
+    "open_issues": 1,
+    "watchers": 0,
+    "default_branch": "main"
+  },
+  "sender": {
+    "login": "marcouz191",
+    "id": 53315381,
+    "node_id": "MDQ6VXNlcjUzMzE1Mzgx",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/53315381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/marcouz191",
+    "html_url": "https://github.com/marcouz191",
+    "followers_url": "https://api.github.com/users/marcouz191/followers",
+    "following_url": "https://api.github.com/users/marcouz191/following{/other_user}",
+    "gists_url": "https://api.github.com/users/marcouz191/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/marcouz191/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/marcouz191/subscriptions",
+    "organizations_url": "https://api.github.com/users/marcouz191/orgs",
+    "repos_url": "https://api.github.com/users/marcouz191/repos",
+    "events_url": "https://api.github.com/users/marcouz191/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/marcouz191/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
